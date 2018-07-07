@@ -1,0 +1,4 @@
+<h3> {{ dataGrafico.leyenda }} </h3>
+<div style="display: block">
+    <canvas baseChart [data]="dataGrafico.data" [labels]="dataGrafico.labels" [chartType]="dataGrafico.type" (chartHover)="chartHovered($event)" (chartClick)="chartClicked($event)"></canvas>
+</div>
